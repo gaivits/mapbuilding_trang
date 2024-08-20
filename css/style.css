@@ -1,0 +1,207 @@
+
+/* Set gray background color and 100% height */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.bg-dark {
+    background-color: #38a153!important;
+}
+.sidenav {
+    color: #38a153;
+    background-color: #ffffff;
+    height: 100%;
+    padding: 24px;
+    position: absolute;
+    z-index: 10;
+    width: 350px;
+}
+.sidenav_hide{
+    color: #38a153;
+    background-color: #ffffff;
+    height: 100%;
+    padding: 24px 5px;
+    position: absolute;
+    z-index: 10;
+    width: 0;
+}
+.card-layer{
+    top: 65px;
+    width: 300px;
+    left: 17px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.map-body{
+    position: relative;
+}
+.btn-layer{
+    position: absolute;
+    padding: 8px;
+    border-radius: 10px;
+    z-index: 99;
+    border: none;
+    top: 45px;
+    right: 5px;
+}
+
+.row.content {
+    height: 93vh;
+    position: relative;
+}
+/* Set black background color, white text and some padding */
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+
+#map{
+    height: 93vh;
+    width: 100%;
+    position:sticky;
+    z-index: 1;
+}
+
+.jumbotron{
+    padding: 10px;
+    border-radius: 20px;
+    color: inherit;
+    background-color: rgb(255, 255, 255);
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2,  .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#out{
+
+    color: #ffffff;
+}
+
+.text-out{
+    max-height: 50vh;
+    overflow: auto;
+}
+.btn-info {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+    border-radius: 0px;
+}
+
+fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.close-button{
+    position: absolute;
+    padding: 8px 8px 8px 4px;
+    border-radius: 0 10px 10px 0;
+    left: 350px;
+    z-index: 1;
+    border: none;
+}
+.close-button_hide{
+    position: absolute;
+    padding: 8px 8px 8px 4px;
+    border-radius: 0 10px 10px 0;
+    left: 350px;
+    z-index: 1;
+    border: none;
+}
+.close-button_hide{
+    position: absolute;
+    padding: 8px 8px 8px 4px;
+    border-radius: 0 10px 10px 0;
+    left: 10px;
+    z-index: 1;
+    border: none;
+}
+
+.btn-border{
+    border-radius: 5px;
+}
+.btn-info {
+    color: #fff;
+    background-color: #38a153;
+    border-color: #38a153;
+    border-radius: 0px;
+}
+.bg-green{
+    text-align: center;
+    color: white;
+    background-color: #38a153;
+    margin: 0;
+}
+.collapse-bg{
+    margin: 0 10px 10px;
+    background-color: aliceblue;
+}
+.panel-collapse{
+    align-items: end;
+}
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 0;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+    box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+}
+.btn-group.special {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .special .btn {
+    flex: 1
+  }
+
+  .logo{
+    border-radius: 15px;
+    max-width: 50px;
+  }
+.header{
+    color: white;
+    font-size: 19px;
+    margin: 2px 0;
+}
+.sub-title{
+    color: white;
+    margin: 0;
+
+}
+
+.display-none{
+    display: none;
+}
+.display-block{
+    display: block;
+}
+.container{
+    
+    display: none;
+    position: absolute;
+    width: 970px;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.jumbotron{
+    padding-right: 60px;
+    height: 780px;
+    padding-left: 60px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.badge {
+    background-color: #ffffff;
+}
