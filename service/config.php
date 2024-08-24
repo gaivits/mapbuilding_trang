@@ -20,7 +20,7 @@ $servername = "35.213.147.91";
 $username = "postgres";
 $password = "4EEC3aC3gABdC4A431eee6b4eaEAC1fB";
 $dbname = "railway";
-$port = (int)"46333";
+$port = 46333;
 
 header('Content-Type: text/html; charset=utf-8');
 header("Access-Control-Allow-Origin: *");
