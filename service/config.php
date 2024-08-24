@@ -1,5 +1,6 @@
-<?php ini_set('display_errors', 1); ?>
-<?php
+<?php 
+ini_set('display_errors', 1);
+
 // $servername = "150.95.80.69";
 // $username = "ltax2";
 // $password = "Ltax!@1234";
