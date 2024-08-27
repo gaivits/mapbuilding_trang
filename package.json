@@ -3,6 +3,6 @@
     "express": "^4.19.2"
   },
   "scripts":{
-    "start":"npm i && node index.js"
+    "start":"node index.js"
   }
 }
