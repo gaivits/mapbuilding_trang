@@ -26,9 +26,7 @@ header('Content-Type: text/html; charset=utf-8');
 header("Access-Control-Allow-Origin: *");
 
 $conn = pg_connect("host=$servername port=$port dbname=$dbname user=$username password=$password") or die('Error: ' . pg_last_error());
-if ($conn)
-{
-  print_r($conn);
-}
+echo $conn;
+
 ?>
 
