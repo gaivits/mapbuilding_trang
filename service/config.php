@@ -16,7 +16,7 @@ ini_set('display_errors', 1);
 // $password = "123456";
 // $dbname = "railway";
 // $port = 5432;
-$servername = "junction.proxy.rlwy.net";
+$servername = "35.213.147.91";
 $username = "postgres";
 $password = "4EEC3aC3gABdC4A431eee6b4eaEAC1fB";
 $dbname = "railway";
