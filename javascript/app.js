@@ -278,7 +278,7 @@ function read_csv_file(){
                                     
                                     <a type='button' class='btn btn-block btn-success btn-xs text-white' href='http://maps.google.com/maps?q=&layer=c&cbll=` + lat +`,`+ lng +`' target='_blank'> Street View </a>
                                     <a type='button' class='btn btn-block btn-success btn-xs text-white' href='https://www.google.co.th/maps/dir/` + lat +`,`+ lng +`/`+lon_lng_current[0]+`,`+lon_lng_current[1]+`' target='_blank'> ค้นหาเส้นทาง </a>
-                                    <a type='button' class='btn btn-block btn-success btn-xs text-white' onclick="window.print()"> พิมพ์ </a>
+                                    <a type='button' class='btn btn-block btn-success btn-xs text-white' onclick="view_report(`+ e.gid + `)"> พิมพ์ </a>
                         </div>
                     </div> `
                         ,{
@@ -748,7 +748,7 @@ function onEachFeature(e, layer) {
                 
                 <a type='button' class='btn btn-block btn-success btn-xs text-white' href='http://maps.google.com/maps?q=&layer=c&cbll=` + lat +`,`+ lng +`' target='_blank'> Street View </a>
                 <a type='button' class='btn btn-block btn-success btn-xs text-white' href='https://www.google.co.th/maps/dir/` + lat +`,`+ lng +`/`+lon_lng_current[0]+`,`+lon_lng_current[1]+`' target='_blank'> ค้นหาเส้นทาง </a>
-                <a type='button' class='btn btn-block btn-success btn-xs text-white' onclick="view_report(`+ e.gid + `)"> พิมพ์ </a>
+                <a type='button' class='btn btn-block btn-success btn-xs text-white' onclick="view_report(`+ e?.gid + `)"> พิมพ์ </a>
     </div>
 </div> `
         ,{
