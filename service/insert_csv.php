@@ -21,7 +21,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $query = pg_query($conn,"SELECT * FROM layers order by id desc limit 1;");
             $objResult = pg_fetch_all($query);
             $json = json_encode($objResult);
-
             // Output the JSON response
             header('Content-Type: application/json');
             echo $json;
@@ -30,9 +29,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     if ($_POST['type'] == 'add_geojson') {
-        
-        
-
         $owner_buil = $_POST['owner_buil'];
         $address = $_POST['address'];
         $road = $_POST['road'];
@@ -58,12 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $jpg4 = $_POST['jpg4'];
         $latitude = $_POST['latitude'];
         $longitude = $_POST['longitude'];
-        $result2 = pg_query($conn, $sql);
-        if ($result2) {
-            $query = pg_query($conn,"SELECT LAST(id) FROM layers ;");
-            $objResult = pg_fetch_all($query);
-        }
-        $layer_id = $result2[0];
+        $layer_id = $_POST['layer_id'];
         $geom = $_POST['geom'];
         $sql = "INSERT INTO build_occupant (
             owner_buil,
