@@ -86,8 +86,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             jpg4,
             latitude,
             longitude,
-            geom,
-            layer_id
+            layer_id,
+            geom
+            
         ) VALUES(
             '$owner_buil',
             '$address',
@@ -114,8 +115,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             '$jpg4',
             '$latitude',
             '$longitude',
-            ST_GeomFromGeoJSON('$geom'),
             '$layer_id'
+            ST_GeomFromGeoJSON('$geom'),
+            
             
         )  ; ";
         // echo  $sql;
