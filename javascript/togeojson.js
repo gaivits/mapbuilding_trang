@@ -23,6 +23,7 @@ var toGeoJSON = (function() {
     function numarray(x) {
         for (var j = 0, o = []; j < x.length; j++) { o[j] = parseFloat(x[j]); }
         return o;
+    
     }
     // get the content of a text node, if any
     function nodeVal(x) {
