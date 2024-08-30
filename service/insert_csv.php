@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($_POST['type'] == 'add_geojson') {
         
-        $layer_id = $_POST['layer_id'];
+        
 
         $owner_buil = $_POST['owner_buil'];
         $address = $_POST['address'];
