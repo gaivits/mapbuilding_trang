@@ -83,7 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             latitude,
             longitude,
             layer_id,
-            geom,
+            geom
             
         ) VALUES(
             '$owner_buil',
