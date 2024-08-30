@@ -14,7 +14,7 @@
 <?php
 include 'config.php';
     $id = $_GET['id'];
-    $query = pg_query($conn,"SELECT * FROM build_occupant where latitude <> NULL AND longitude <> NULL;");
+    $query = pg_query($conn,"SELECT * FROM build_occupant where id=1;");
     $objResult = pg_fetch_array($query);
 ?>
 
