@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     if ($_POST['type'] == 'add_geojson') {
-        $geom = $_POST['geom'];
+        
         $layer_id = $_POST['layer_id'];
 
         $owner_buil = $_POST['owner_buil'];
@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $objResult = pg_fetch_all($query);
         }
         $layer_id = $result2[0];
-        
+        $geom = $_POST['geom'];
         $sql = "INSERT INTO build_occupant (
             owner_buil,
             address,
