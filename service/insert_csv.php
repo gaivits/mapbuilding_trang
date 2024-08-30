@@ -58,8 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $jpg4 = $_POST['jpg4'];
         $latitude = $_POST['latitude'];
         $longitude = $_POST['longitude'];
-        $geom = $_POST['geom'];
-        $layer_id = $_POST['layer_id'];
+        $etc = $_POST['etc'];
         $sql = "INSERT INTO build_occupant (
             owner_buil,
             address,
@@ -86,8 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             jpg4,
             latitude,
             longitude,
-            geom,
-            layer_id
+            etc
         ) VALUES(
             '$owner_buil',
             '$address',
@@ -114,8 +112,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             '$jpg4',
             '$latitude',
             '$longitude',
-            ST_GeomFromGeoJSON('$geom'),
-            '$layer_id'
+            '$etc'
             
         )  ; ";
         // echo  $sql;
