@@ -14,7 +14,7 @@
 <?php
 include 'config.php';
     $id = $_GET['id'];
-    $query = pg_query($conn,"SELECT * FROM build_occupant limit 1");
+    $query = pg_query($conn,"SELECT * FROM build_occupant where id = '$id';");
     $objResult = pg_fetch_array($query);
 ?>
 
